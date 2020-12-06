@@ -1,0 +1,17 @@
+.board-ticker {
+    display: inline;
+}
+
+.stock-red {
+    color: red;
+}
+
+.stock-green {
+    color: green;
+}
+
+.market-status {
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}

@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand" routerLink="" (click)="clickSearch()">Stock Search</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link {{isSearchPageActive}}" routerLink="" (click)="clickSearch()">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/watchlist" routerLinkActive="active" (click)="clickWatchlist()">Watchlist</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="clickPortfolio()">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+</nav>

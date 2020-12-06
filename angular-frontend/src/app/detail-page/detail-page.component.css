@@ -1,0 +1,12 @@
+.detail-page-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+app-stock-detail-board {
+    display: block;
+}
+
+mat-tab-group {
+    display: block;
+}

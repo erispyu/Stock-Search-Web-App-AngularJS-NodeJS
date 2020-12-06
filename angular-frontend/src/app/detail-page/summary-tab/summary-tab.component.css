@@ -1,0 +1,31 @@
+.summary-tab-left {
+    display: inline;
+    padding-left: 1%;
+}
+
+.summary-tab-right {
+    display: inline;
+    padding-right: 1%;
+}
+
+.summary-tab-table{
+    margin-left: 5%;
+}
+
+.hidethis {
+    color: transparent;
+}
+
+.discription-card {
+    margin-left: 2%;
+}
+
+.discription-date .discription-content {
+    margin-left: 2%;
+    padding-left: 2%;
+}
+
+.description-header {
+    text-align: center;
+    font-weight: bold;
+}

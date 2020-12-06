@@ -1,0 +1,13 @@
+.navbar {
+    background-color: rgb(100, 70, 251);
+}
+
+.active {
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.nav-item:active{
+    border: 1px solid white;
+    border-radius: 15px;
+}

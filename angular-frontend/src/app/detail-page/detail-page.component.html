@@ -1,0 +1,21 @@
+<div *ngIf="isLoading; else elseBlock">
+    <mat-spinner class="load-spinner" [diameter]="70" style="margin:0 auto;"></mat-spinner>
+</div>
+
+<ng-template #elseBlock>
+    <div class="detail-page-container">
+    <app-stock-detail-board #detailBoard [searchedTicker]="ticker"></app-stock-detail-board>
+
+    <mat-tab-group animationDuration="0ms" mat-stretch-tabs="" dynamicheight="">
+    <mat-tab class="max-auto" label="Summary">
+        <app-summary-tab [searchedTicker]="ticker"></app-summary-tab>
+    </mat-tab>
+    <mat-tab class="max-auto" label="Top News">
+        <app-news-tab [searchedTicker]="ticker"></app-news-tab>
+    </mat-tab>
+    <mat-tab class="max-auto" label="Charts">
+        <app-charts-tab [searchedTicker]="ticker"></app-charts-tab>
+    </mat-tab>
+    </mat-tab-group>
+    </div>
+</ng-template>

@@ -1,0 +1,55 @@
+<div class="row justify-content-between">
+    <div class="col-6 summary-tab-left">
+        <table class="table table-borderless table-sm summary-tab-table">
+            <thead class="hidethis">
+            <tr>
+                <th scope="col">Col 1</th>
+                <th scope="col">Col 2</th>
+                <th scope="col">Empty Col</th>
+                <th scope="col">Col 3</th>
+                <th scope="col">Col 4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>High Price:</td>
+                <td colspan="2">{{highPrice | number:'1.2-2'}}</td>
+                <td>Mid Price:</td>
+                <td>{{midPrice | number:'1.2-2'}}</td>
+            </tr>
+            <tr>
+                <td>Low Price:</td>
+                <td colspan="2">{{lowPrice | number:'1.2-2'}}</td>
+                <td>Ask Price:</td>
+                <td>{{askPrice | number:'1.2-2'}}</td>
+            </tr>
+            <tr>
+                <td>Open Price:</td>
+                <td colspan="2">{{openPrice | number:'1.2-2'}}</td>
+                <td>Ask Size:</td>
+                <td>{{askSize}}</td>
+            </tr>
+            <tr>
+                <td>Prev. CLose:</td>
+                <td colspan="2">{{prevClose | number:'1.2-2'}}</td>
+                <td>Bid Price:</td>
+                <td>{{bidPrice | number:'1.2-2'}}</td>
+            </tr>
+            <tr>
+                <td>Volume:</td>
+                <td colspan="2">{{volume}}</td>
+                <td>Bid Size:</td>
+                <td>{{bidSize | number:'1.2-2'}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="discription-card">
+            <h3 class="description-header">Company's Description</h3>
+            <p class="discription-date">Start Date: {{startDate}}</p>
+            <p class="discription-content" >{{companyDescription}}</p>
+        </div>
+    </div>
+    <div class="col-6 summary-tab-right text-center">
+        Summary Chart would display here.
+    </div>
+</div>

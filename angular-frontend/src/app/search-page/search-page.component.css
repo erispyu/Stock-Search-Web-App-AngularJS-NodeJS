@@ -1,0 +1,30 @@
+.page-header {
+    font-weight: bold;
+    font-size: 60px;
+    padding: 8% 0;
+}
+
+input {
+    border: transparent;
+}
+
+input:focus {
+    outline: 0px;
+}
+
+.search-input {
+    border: 1px solid;
+    border-color: rgb(100, 70, 251);
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.search-icon {
+    color: rgb(100, 70, 251);
+}
+
+.search-icon:focus {
+    outline: 0px;
+    background-color: lightgray;
+}

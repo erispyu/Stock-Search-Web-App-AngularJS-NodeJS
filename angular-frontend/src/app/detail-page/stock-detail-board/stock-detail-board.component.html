@@ -1,0 +1,46 @@
+<div class="row justify-content-between">
+    <div class="col-4">
+        <h1 class="board-ticker">
+            {{ticker | uppercase}}
+        </h1>
+        <app-star-icon class="collect-btn" (click)="watchlistBtnOnClick()" [isAdded]="isAddedToWatchlist"></app-star-icon>
+    </div>
+    <div class="col-4 text-right">
+        <h1 class="{{stockColor}}">
+            {{lastPrice | number:'1.2-2'}}
+        </h1>
+    </div>
+</div>
+
+<div class="row justify-content-between">
+    <div class="col-4">
+        <h2>{{companyName}}</h2>
+    </div>
+    <div class="col-4 text-right">
+        <h2 class="{{stockColor}}">
+            <app-stock-caret-icon [isPositive]="isChangePositive"></app-stock-caret-icon>
+            {{change | number:'1.2-2'}}({{changePercent | number:'1.2-2'}}%)
+        </h2>
+    </div>
+</div>
+
+<div class="row justify-content-between">
+    <div class="col-4">
+        <p>{{exchangeCode}}</p>
+    </div>
+    <div class="col-4 text-right">
+        <p>{{currTimeStr}}</p>
+    </div>
+</div>
+
+<div *ngIf="isMarketOpen; else elseBlock">
+    <div class="market-status mx-auto center-block alert alert-success text-center" role="alert">
+        Market is Open
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    <div class="market-status max-auto center-block alert alert-danger text-center" role="alert">
+        Market Closed on {{lastTimeStr}}
+    </div>
+</ng-template>
